@@ -14,8 +14,6 @@ Utils
 
 * sqlite https://github.com/CyanogenMod/android_external_sqlite
 
-* su
-
 * wget https://github.com/jsha/android-wget
 
 * curl https://github.com/jahrome/curl-android
@@ -36,3 +34,16 @@ Utils
 	# enter adb shell with root
 	$ mv /sdcard/vim /system/xbin
 	$ mv /sdcard/libncurses.so /system/lib
+
+auto install
+
+	need `adb shell` is root; like VallianROM ..
+
+	$ ./install
+	# install bin to /system/xbin
+	# install lib to /system/lib
+
+
+
+
+

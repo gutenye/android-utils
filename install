@@ -1,0 +1,4 @@
+#!/bin/bash
+
+adb push bin system/xbin
+adb push lib system/lib
