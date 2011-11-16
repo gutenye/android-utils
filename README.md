@@ -1,10 +1,53 @@
 Android-Utils, a collection of utils for android
 ================================================
 
-binaries come from CyanogenMod.
+| Homepage:      |  https://github.com/GutenYe/android-utils       |
+|----------------|------------------------------------------------------       |
+| Author:	       | Guten                                                 |
+| License:       | MIT-LICENL                                                |
+| Documentation: | http://rubydoc.info/gems/android-utils/frames                |
+| Issue Tracker: | https://github.com/GutenYe/android-utils/issues |
 
-Utils
-------
+Overview
+--------
+
+it contains rsync, ssh, curl, openvpn ...
+
+most binaries come from CyanogenMod.
+
+INSTALL
+--------
+
+Manual
+
+	$ adb push bin/vim /sdcard/vim
+	$ adb push lib/libncurses.so /sdcard/libncuses.so
+
+	$ adb shell
+	$ su
+	$ mv /sdcard/vim /system/xbin
+	$ mv /sdcard/libncurses.so /system/lib
+
+Auto Install
+
+	need `adb shell` returns root. like VallianROM ..
+
+	$ ./install
+
+
+Contributing
+-------------
+
+* Feel free to join the project and make contributions (by submitting a pull request)
+* Submit any bugs/features/ideas to issue tracker
+
+Credits
+--------
+
+This project is only possible because of the work of [many fine developers from around the world]((https://github.com/GutenYe/android-utils/contributors).
+
+Resources
+---------
 
 * busybox https://github.com/dylex/android_external_busybox
 
@@ -26,24 +69,15 @@ Utils
 
 * rsync https://github.com/dylex/android_external_rsync
 
-# INSTALL
+Copyright
+---------
 
-	$ adb push bin/vim /sdcard/vim
-	$ adb push lib/libncurses.so /sdcard/libncuses.so
+(the MIT License)
 
-	# enter adb shell with root
-	$ mv /sdcard/vim /system/xbin
-	$ mv /sdcard/libncurses.so /system/lib
+Copyright (c) 2011 Guten
 
-auto install
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the 'Software'), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
-	need `adb shell` is root; like VallianROM ..
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
-	$ ./install
-	# install bin to /system/xbin
-	# install lib to /system/lib
-
-
-
-
-
+THE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.  IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
