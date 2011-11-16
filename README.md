@@ -11,29 +11,24 @@ Android-Utils, a collection of utils for android
 Overview
 --------
 
-it contains rsync, ssh, curl, openvpn ...
+It contains rsync, ssh, curl, openvpn ..., [a list of binaries](https://github.com/GutenYe/android-utils/tree/master/bin)
 
-most binaries come from CyanogenMod.
+Most binaries come from CyanogenMod.
 
 INSTALL
 --------
 
 Manual
 
-	$ adb push bin/vim /sdcard/vim
-	$ adb push lib/libncurses.so /sdcard/libncuses.so
+	$ adb push bin/vim /data/local/tmp/vim
 
-	$ adb shell
-	$ su
-	$ mv /sdcard/vim /system/xbin
-	$ mv /sdcard/libncurses.so /system/lib
+	# enter adb shell with root
+	$ mv /data/local/tmp/vim /system/xbin
 
 Auto Install
 
-	need `adb shell` returns root. like VallianROM ..
-
-	$ ./install
-
+	# need `adb shell` returns root. like in VallianROM ..
+	# cd source directory and run ./install
 
 Contributing
 -------------
